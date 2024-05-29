@@ -31,7 +31,7 @@ function App() {
     <Routes>
       <Route path="/" element={
         <PrivateRoute user={user}>
-          <TodoPage/>
+          <TodoPage setUser={setUser}/>
         </PrivateRoute>
       } />
       <Route path="/register" element={<RegisterPage />} />
